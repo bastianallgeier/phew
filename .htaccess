@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^(.*).vue$ .phew.php?component=$1 [L]
+RewriteRule ^(.*).vue.css$ .phew.php?component=$1&load=css [L]
+</IfModule>
